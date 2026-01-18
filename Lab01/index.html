@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>RFUBAReds' Risky Ramen</title>
+</head>
+
+<body>
+    <h1>Welcome to RFUBAReds' Risky Ramen</h1>
+    <img src="assets/OIP-1483163241.jpg" alt="Image of Pork Ramen" width="300">
+    <img src="assets/OIP-3696769353.jpg" alt="Image of Chicken Ramen" width="300">
+
+    <form>
+        <!--first and last name field-->
+        <label for="firstName">First name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br>
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName"required><br>
+        <p></p>
+
+        <!--phone number -->
+        <label for="phone">Enter your phone number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required><br>
+        <p></p>
+
+        <!--email-->
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <p></p>
+
+        <!--radio toggle for pickup or delivery-->
+        <input type="radio" id="delivery" name="deliveryORpickup" value="delivery">
+        <label for="delivery">Delivery</label><br>
+        <input type="radio" id="pickUp" name="deliveryORpickup" value="pickUp">
+        <label for="pickUp">Pick Up</label><br>
+        <p></p>
+    
+        <!--drop down selection list for protien-->
+        <label for="protien">Choose a Protien:</label><br>
+        <select name="protein" id="protien"><br>  
+        <datalist id="protien">
+            <option value="pork">Pork</option>
+            <option value="chicken">Chicken</option>
+        </select><p></p>
+
+        <!--check boxes for toppings-->
+        <label for="toppings">Choose your toppings:</label><br><!--not appearing-->
+        <input type="checkbox" id="topping1" name="topping1" value="Noodles">
+        <label for="topping1"> Noodles</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Egg">
+        <label for="topping2"> Egg</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Green Onion">
+        <label for="topping3"> Green onions</label>
+        <p></p>
+
+        <!--text box for instructiosn/additional info-->
+        <label for="w3review">Additional Information or Instructions</label><br>
+        <textarea id="w3review" name="w3review" rows="4" cols="50">
+        </textarea>
+        <p></p>
+
+        <!--Feel like adding a submit button-->
+        <button type="submit">Submit Order</button>
+        <p></p>
+
+    </form>
+
+</body>
+</html>
+
+
+<!-- We will also have a menu using the Forms tags. <form>
+    name field for the person ordering (<input>  (check the type attribute))
+    Phone number field (person) (<input>  (check the type attribute))
+    email field (<input>  (check the type attribute))
+    Drop down menu for your protein option (<select>)
+    Radio toggle for pickup or delivery (<input>  (check the type attribute))
+    Select multiple (check boxes) for ingredients (you decide)   (<input>  (check the type attribute))
+    Text area for additional Info (<Textarea>)
+Make sure you set at least 3 fields as "Required" -->
